@@ -18,5 +18,9 @@ Route::get('/', function () {
 	//return view('welcome');
 	return "Hola mundo";
 });
+Route::get('/hola', function () {
+	//return view('welcome');
+	return "Prueba push servidor remoto";
+});
 
 Route::resource('/datos',DatosController::class);
