@@ -23,8 +23,8 @@ class CreateTutoresTable extends Migration
             $table->string('apellido_tutor');   
             $table->string('apellido2_tutor');  
             $table->string('pais_doc_identidad');  
-            $table->string('provincia');  
-            $table->string('municipio');  
+            $table->string('provincia')->nullable();  
+            $table->string('municipio')->nullable();  
             $table->string('estado_tutor')->nullable();  
             $table->string('tlf_tutor');  
             $table->string('email');  
