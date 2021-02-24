@@ -19,7 +19,9 @@ Route::get('/', function () {
 	return "Hola mundo";
 });
 
+Route::resource('tutores', TutoresController::class);
+Route::apiResource('tutores', TutoresController::class);
 
 Route::resource('/datos',DatosController::class);
-Route::resource('tutores','App\Http\Controllers\TutoresController');
+
 

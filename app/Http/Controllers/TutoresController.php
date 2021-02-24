@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Tutores;
 
@@ -16,6 +15,8 @@ class TutoresController extends Controller
     public function index()
     {
         //
+        return view('tutores.create');
+
     }
 
     /**
@@ -26,6 +27,7 @@ class TutoresController extends Controller
     public function create()
     {
         //
+        return view('tutores.create');
     }
 
     /**
