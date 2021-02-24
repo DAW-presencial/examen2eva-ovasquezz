@@ -25,7 +25,7 @@ class CreateTutoresTable extends Migration
             $table->string('pais_doc_identidad');  
             $table->string('provincia')->nullable();  
             $table->string('municipio')->nullable();  
-            $table->string('estado_tutor')->nullable();  
+            $table->string('estado_tutor');  
             $table->string('tlf_tutor');  
             $table->string('email');  
         });
