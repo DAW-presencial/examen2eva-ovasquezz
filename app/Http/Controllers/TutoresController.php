@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Tutores;
+use App\Models\Tutores;
 
 class TutoresController extends Controller
 {
@@ -38,21 +38,33 @@ class TutoresController extends Controller
     {
         //
         $request->validate([
-            'first_name'=>'required',
-            'last_name'=>'required',
+            'nombre_emp' =>'required',
+            'tipo_identidad' =>'required',
+            'nie_emp' =>'required',
+            'nombre_tutor' =>'required',
+            'apellido_tutor' =>'required',
+            'apellido2_tutor' =>'required',
+            'pais_doc_identidad' =>'required',
+            'tlf_tutor' =>'required',
             'email'=>'required'
         ]);
 
         $contact = new Tutores([
-            'first_name' => $request->get('first_name'),
-            'last_name' => $request->get('last_name'),
-            'email' => $request->get('email'),
-            'job_title' => $request->get('job_title'),
-            'city' => $request->get('city'),
-            'country' => $request->get('country')
+            'nombre_emp' => $request->get('nombre_emp'),
+            'tipo_identidad' => $request->get('tipo_identidad'),
+            'nie_emp' => $request->get('nie_emp'),
+            'nombre_tutor' => $request->get('nombre_tutor'),
+            'apellido_tutor' => $request->get('apellido_tutor'),
+            'apellido2_tutor' => $request->get('apellido2_tutor'),
+            'pais_doc_identidad' => $request->get('pais_doc_identidad'),
+            'provincia' => $request->get('provincia'),
+            'municipio' => $request->get('municipio'),
+            'estado_tutor' => $request->get('estado_tutor'),
+            'tlf_tutor' => $request->get('tlf_tutor'),
+            'email' => $request->get('email')
         ]);
         $contact->save();
-        return redirect('/contacts')->with('success', 'Contact saved!');
+        return redirect('/tutores')->with('success', 'Tutor saved!');
 
     }
 
