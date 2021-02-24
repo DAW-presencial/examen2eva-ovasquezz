@@ -1,3 +1,11 @@
+# Aclaraciones sobre el examen
+
+El controlador que venia al principio (DatosController) me da algunos errores.
+El soporte multilingüe lo he intentado por no lo he conseguido acabar. 
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
