@@ -4,6 +4,8 @@ El controlador que venia al principio (DatosController) me da algunos errores.
 El soporte multilingüe lo he intentado por no lo he conseguido acabar. 
 Los campos nullable() que en mi caso son provincia, municipio aun teniendo la funcion nullable() me salta un error diciendo que no pueden ser nulos.
 
+El despliegue en remoto funciona correctamente.
+
 
 
 
